@@ -1,21 +1,64 @@
+html {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	width: 100%
+}
+
 body {
-	display: block;
-	margin: auto;
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	width: 100%;
+}
+
+#orginal {
+	background-image: url(https://cdn.bulbagarden.net/upload/thumb/0/02/009Blastoise.png/375px-009Blastoise.png), url(https://cdn.bulbagarden.net/upload/thumb/7/7e/006Charizard.png/375px-006Charizard.png);
+	background-position: right, left;
+	background-repeat: no-repeat, no-repeat;
+}
+
+#power {
+	background-image: url(https://cdn.bulbagarden.net/upload/thumb/7/78/150Mewtwo.png/375px-150Mewtwo.png), url(https://cdn.bulbagarden.net/upload/thumb/b/b1/151Mew.png/375px-151Mew.png);
+	background-position: right, left;
+	background-repeat: no-repeat, no-repeat
+}
+
+#life {
+	background-image: url(https://cdn.bulbagarden.net/upload/thumb/7/70/383Groudon.png/375px-383Groudon.png), url(https://cdn.bulbagarden.net/upload/thumb/4/41/382Kyogre.png/375px-382Kyogre.png);
+	background-position: right, left;
+	background-repeat: no-repeat, no-repeat
+}
+
+#hide {
+	background-image: url(https://cdn.bulbagarden.net/upload/thumb/6/66/484Palkia.png/375px-484Palkia.png), url(https://cdn.bulbagarden.net/upload/thumb/8/8a/483Dialga.png/375px-483Dialga.png);
+	background-position: right, left;
+	background-repeat: no-repeat, no-repeat
+}
+
+.bodywork {
+	margin: 0 auto;
 	width: 50%;
 	height: 100%;
-	padding: 0px;
+	padding: 0;
+	background-image: url(http://plainsmanlabs.com/pokeball/img/pokeball.svg);
+	background-size: 10px;
+	background-repeat: all;
 }
 .navitop {
 	overflow: hidden;
 	background-color: black;
+	position: fixed;
+	top: 0px;
+	width: 50%;
 }
 
 .navitop a {
 	text-decoration: none;
 	display: inline;
 	color: white;
-	font-size: 20px;
-	padding: 13px 15px;
+	font-size: 15px;
+	padding: 0px 15px;
 }
 
 .navitop a:hover {
@@ -25,50 +68,60 @@ body {
 
 ul {
 	list-style-type: none;
+	padding: 0px;
 }
 
 .navitop ul li {
 	display: inline;
-	width: 25%;
 }
 
 .title {
-	margin: 50px;
+	margin: 35px 50px 50px 50px;
+	background-color: white;
 }
 
 #intro {
-	width: 40%;
-	margin: 20px 5px;
-	padding: 1px;
-	clear: left;
-	float: left;
+	width: 50%;
+	height: auto;
+	text-align: center;
+	clear: right;
 	font-size: 17px;
+	border: 7px outset;
+	background-color: white;
 }
 
-.pikachu {
-	width: 55%;
-	clear: right;
-	float: right;
-	margin: 15px 5px;
-	display: block;
+.briefing {
+	width: 50%;
+	height: auto;
+	font-size: 17px;
+	border: 7px outset;
+	background-color: white;
+}
+
+.pikapeace {
+	width: 150px;
+	height: auto;
 }
 
 .briefone {
 	clear: left;
 	padding: 1px;
-	margin: 20px 5px;
+	margin: 20px auto;
 	text-align: center;
 	margin-top: 20px;
-	width: 100%;
+	width: 50%;
 	font-size: 17px;
+	border: 7px outset;
+	background-color: white;
 }
 
 footer {
-	width: 50%;
-	background: grey;
+	display: block;
+	width: 100%;
 	height: 50px;
-	position: fixed;
+	position: static;
 	bottom: 0px;
+	clear: both;
 }
 
 .facebooklogo {
@@ -93,45 +146,87 @@ footer {
 
 #history {
 	width: 45%;
+	height: auto;
 	margin: 20px auto;
 	padding: 10px;
 	clear: left;
 	float: left;
 	font-size: 15px;
 	display: block;
+	border: 6px outset;
+	background-color: white;
 }
 
 #histpic {
 	width: 55%;
+	height: auto;
 	clear: right;
 	float: right;
+	padding: 10px;
 	margin: 20px auto;
 	display: block;
+	background-color: white;
+}
+
+.satoshi {
+	width: 150px;
+	height: auto;
+	background-color: white;
 }
 
 #ninpic {
 	width: 50%;
+	height: auto;
 	clear: left;
 	float: left;
 	margin: 20px auto;
+	background-color: white;
 }
 
 #histcre {
 	width: 50%;
+	height: auto;
 	margin: 20px auto;
-	padding: 1px;
+	padding: 10px;
 	clear: right;
 	float: right;
 	font-size: 15px;
+	border: 6px outset;
+	background-color: white;
 }
 
 .briefhist {
 	width: 50%;
-	margin: 20px auto 0px auto;
+	height: auto;
+	margin: 10px auto;
+	padding: 10px;
+	clear: both;
+	font-size: 15px;
+	border: 6px outset;
+	background-color: white;
+}
+
+.briefhisttwo {
+	width: 50%;
+	height: auto;
+	margin: 10px auto 40px auto;
+	padding: 10px;
+	font-size: 15px;
+	border: 6px outset;
+	background-color: white;
+}
+
+/*pokemon*/
+
+.pokemart {
+	width: 100%;
+	margin: 20px auto;
 	padding: 1px;
 	clear: left;
 	float: left;
-	font-size: 15px;
+	font-size: 17px;
+	border: 7px outset;
+	background-color: white;
 }
 
 /*contacts*/
@@ -165,4 +260,19 @@ textarea {
 	margin: 5px;
 	display: block;
 	vertical-align: middle;
+}
+
+.bod {
+	padding-bottom: 60px;
+}
+
+#summary {
+	background-color: white;
+	width: 60%;
+	padding: 0px auto;
+}
+
+form {
+	background-color: white;
+	width: 60%;
 }
